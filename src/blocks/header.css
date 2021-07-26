@@ -1,0 +1,112 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 15;
+
+  width: 100%;
+
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.header_hidden {
+  display: none;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  min-height: 60px;
+}
+
+.header__logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.header__icon {
+  margin-right: 20px;
+  width: 36px;
+  height: 36px;
+
+  fill: white;
+}
+
+.header__label {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: 1.6px;
+}
+
+.header__wa-btn {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  margin-right: 40px;
+  text-decoration: none;
+}
+
+.header__wa-btn:focus {
+  outline: none;
+}
+
+.header__wa-btn:hover .header__wa-icon {
+  fill: #5fe764;
+}
+
+.header__wa-btn:hover .header__telephone {
+  color: var(--color-2);
+}
+
+.header__wa-icon {
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  fill: white;
+  transition: fill 0.3s ease;
+}
+
+.header__telephone {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.header__menu-container {
+  display: flex;
+  align-items: center;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+
+  padding: 0;
+  margin: 0;
+
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.header__menu-icon {
+  width: 30px;
+  height: 30px;
+
+  fill: white;
+  transition: fill 0.3s ease;
+}
+
+.header__menu:hover .header__menu-icon {
+  fill: var(--color-2);
+}
+
+@media screen and (max-width: 620px) {
+  .header__wa-btn {
+    display: none;
+  }
+}

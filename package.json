@@ -1,5 +1,5 @@
 {
-  "name": "visota",
+  "name": "visota-kzn",
   "version": "1.0.0",
   "description": "landing page",
   "main": "index.js",
@@ -11,17 +11,17 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/MelentQ/visota-kzn.git"
   },
   "keywords": [
-    "mesto"
+    "landing"
   ],
   "author": "MelentQ",
   "license": "ISC",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/MelentQ/visota-kzn/issues"
   },
-  "homepage": "",
+  "homepage": "https://github.com/MelentQ/visota-kzn#readme",
   "devDependencies": {
     "@babel/core": "^7.14.2",
     "@babel/preset-env": "^7.14.2",
