@@ -8,11 +8,31 @@ export const gallerySwiperSettings = {
     el: '.swiper-pagination',
     type: 'fraction',
   },
-  simulateTouch: true,
-  grabCursor: true,
+  simulateTouch: false,
   loop: true,
   effect: 'fade',
   fadeEffect: {
     crossFade: true,
-  }
+  },
+  touchRatio: 1
+}
+
+export const clientsSwiperSelector = '.clients__swiper';
+export const clientsSwiperSettings = {
+  simulateTouch: true,
+  grabCursor: true,
+  loop: true,
+  autoplay: {
+    delay: 3000
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 2
+    },
+    768: {
+      slidesPerView: 4
+    }
+  },
+  spaceBetween: 40,
+  centeredSlides: true
 }

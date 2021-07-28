@@ -3,7 +3,9 @@
 }
 
 .slider__buttons {
-  position: relative;
+  position: absolute;
+  top: 0;
+  right: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,6 +19,10 @@
 
   cursor: pointer;
   background: none;
+}
+
+.slider__button_type_prev {
+  margin-right: 30px;
 }
 
 .slider__button:focus {
@@ -36,7 +42,7 @@
   width: 60px;
   height: 40px;
 
-  fill: white;
+  fill: var(--color-text);
   transition: fill 0.3s ease;
 }
 
@@ -45,7 +51,15 @@
 }
 
 .slider__pagination {
-  position: static;
-  width: fit-content;
-  margin: 0 20px;
+  right: 0;
+  left: unset;
+  bottom: 0;
+  width: auto;
+}
+
+@media screen and (max-width: 420px) {
+  .slider__button-icon {
+    width: 48px;
+    height: 32px;
+  }
 }

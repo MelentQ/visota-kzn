@@ -1,6 +1,10 @@
 .intro {
+  --fs-title: 48px;
+  --fs-subtitle: 28px;
+  --fs-button: 20px;
+
   position: relative;
-  background-image: url(../images/intro.jpg);
+  background-image: url(../images/intro-2.jpg);
   background-size: cover;
 }
 
@@ -20,34 +24,36 @@
   flex-direction: column;
   align-items: center;
 
+  padding-top: 160px;
   padding-bottom: 100px;
 }
 
 .intro__title {
   z-index: 10;
 
-  margin-top: 160px;
-  margin-bottom: 24px;
-  max-width: 600px;
+  margin-top: 0;
+  margin-bottom: 30px;
 
-  font-size: 48px;
+  font-size: var(--fs-title);
   line-height: 1.5;
-  font-weight: 500;
+  font-weight: 900;
+  letter-spacing: 4px;
   text-align: center;
   text-transform: uppercase;
+  color: var(--color-alt-text);
 }
 
 .intro__title::after {
   display: block;
   content: '';
-  width: 250px;
-  height: 2px;
+  width: 280px;
+  height: 4px;
   position: relative;
   top: 10px;
   left: 50%;
   transform: translateX(-50%);
 
-  background-color: var(--color-2);
+  background-color: var(--color-alt-text);
 }
 
 .intro__subtitle {
@@ -57,10 +63,11 @@
   margin-bottom: 80px;
   max-width: 600px;
 
-  font-size: 28px;
+  font-size: var(--fs-subtitle);
   line-height: 1.2;
   font-weight: 400;
   text-align: center;
+  color: var(--color-alt-text);
 }
 
 .intro__links {
@@ -81,30 +88,39 @@
 .intro__button {
   display: block;
 
-  border: solid 1px white;
-  background-color: white;
+  border: solid 1px var(--color-alt-text);
+  background-color: var(--color-alt-text);
   padding: 6px 18px;
   width: fit-content;
 
   cursor: pointer;
-  font-size: 20px;
+  font-size: var(--fs-button);
   line-height: 1;
   font-weight: 500;
   transition: background-color 0.5s ease;
-  color: black;
+  color: var(--color-2);
   text-decoration: none;
   text-align: center;
 }
 
 .intro__button:hover {
   background: none;
-  color: var(--color-2);
-  border-color: var(--color-2);
+  color: var(--color-alt-text);
+}
+
+.intro__button:focus {
+  background: none;
+  color: var(--color-alt-text);
+  outline: none;
 }
 
 @media screen and (max-width: 768px) {
+  .intro {
+    --fs-title: 40px;
+    --fs-subtitle: 20px;
+  }
   .intro__title {
-    font-size: 44px;
+    letter-spacing: 2px;
   }
   .intro__button {
     display: none;
@@ -116,39 +132,21 @@
 
 @media screen and (max-width: 600px) {
   .intro__inner {
-    padding-bottom: 40px;
+    padding-top: 100px;
+    padding-bottom: 0;
+  }
+  .intro {
+    --fs-title: 28px;
+    --fs-subtitle: 18px;
   }
   .intro__title {
-    margin-top: 100px;
-    font-size: 40px;
-  }
-  .intro__subtitle {
-    font-size: 24px;
-  }
-}
-
-@media screen and (max-width: 520px) {
-  .intro__inner {
-    padding-bottom: 20px;
-  }
-  .intro__title {
-    margin-top: 100px;
-    font-size: 32px;
-  }
-  .intro__subtitle {
-    font-size: 20px;
+    letter-spacing: normal;
   }
 }
 
 @media screen and (max-width: 420px) {
-  .intro__inner {
-    padding-bottom: 40px;
-  }
-  .intro__title {
-    margin-top: 100px;
-    font-size: 24px;
-  }
-  .intro__subtitle {
-    font-size: 18px;
+  .intro {
+    --fs-title: 20px;
+    --fs-subtitle: 16px;
   }
 }

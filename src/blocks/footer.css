@@ -1,12 +1,18 @@
 .footer {
   padding: 24px 0;
-  background-color: var(--color-4);
+  background-color: rgba(5, 8, 20, 0.8);
 }
 
 .footer__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  padding-top: 0;
+}
+
+.footer__label {
+  color: var(--color-alt-text);
 }
 
 @media screen and (max-width: 768px) {

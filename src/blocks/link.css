@@ -6,11 +6,16 @@
 
   cursor: pointer;
   text-decoration: none;
-  color: white;
+  color: var(--color-text);
   transition: color 0.3s ease, border-color 0.3s ease;
 
   line-height: 1.5;
-  border-bottom: solid 1px white;
+  border-bottom: solid 1px var(--color-text);
+}
+
+.link_place_footer {
+  color: var(--color-alt-text);
+  border-bottom-color: var(--color-alt-text);
 }
 
 .link:last-of-type {
@@ -22,8 +27,18 @@
   border-color: var(--color-2);
 }
 
+.link_place_footer:hover {
+  color: var(--color-3);
+  border-color: var(--color-3);
+}
+
 .link:focus {
   outline: none;
   color: var(--color-2);
   border-color: var(--color-2);
+}
+
+.link_place_footer:focus {
+  color: var(--color-3);
+  border-color: var(--color-3);
 }
