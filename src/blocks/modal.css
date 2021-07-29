@@ -17,6 +17,10 @@
   background-color: rgba(5, 8, 20, 0.9);
 }
 
+.modal__container {
+  position: relative;
+}
+
 .modal_opened {
   visibility: visible;
   opacity: 1;
@@ -24,8 +28,8 @@
 
 .modal__close-btn {
   position: absolute;
-  top: 60px;
-  right: 60px;
+  top: -60px;
+  right: -60px;
 
   padding: 0;
   width: 50px;
@@ -84,8 +88,8 @@
 
 @media screen and (max-width: 768px) {
   .modal__close-btn {
-    top: 30px;
-    right: 30px;
+    top: -30px;
+    right: -30px;
 
     width: 30px;
     height: 30px;

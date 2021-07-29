@@ -47,7 +47,6 @@ const onOpenModal = () => {
   setIsModalOpen(true);
 }
 const onCloseModal = () => {
-  header.classList.remove('header_hidden');
   setIsModalOpen(false);
 }
 

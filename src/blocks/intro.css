@@ -4,7 +4,7 @@
   --fs-button: 20px;
 
   position: relative;
-  background-image: url(../images/intro-2.jpg);
+  background-image: url(../images/intro.webp);
   background-size: cover;
 }
 
@@ -70,19 +70,26 @@
   color: var(--color-alt-text);
 }
 
+.intro__nav-links {
+  z-index: 10;
+}
+
 .intro__links {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
 
-  z-index: 10;
   margin: 0;
   padding: 0;
 }
 
 .intro__link {
   list-style: none;
+  margin-bottom: 40px;
+}
+
+.intro__link:last-of-type {
+  margin-bottom: 0;
 }
 
 .intro__button {
@@ -122,7 +129,7 @@
   .intro__title {
     letter-spacing: 2px;
   }
-  .intro__button {
+  .intro__links {
     display: none;
   }
   .intro__subtitle {
@@ -133,7 +140,7 @@
 @media screen and (max-width: 600px) {
   .intro__inner {
     padding-top: 100px;
-    padding-bottom: 0;
+    padding-bottom: 60px;
   }
   .intro {
     --fs-title: 28px;

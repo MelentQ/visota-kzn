@@ -1,5 +1,6 @@
 const animatedItems = document.querySelectorAll('.animated-element');
 if (animatedItems.length > 0) {
+  animateOnScroll();
   window.addEventListener('scroll', animateOnScroll);
   function animateOnScroll() {
     animatedItems.forEach(item => {

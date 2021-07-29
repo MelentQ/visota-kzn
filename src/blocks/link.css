@@ -42,3 +42,13 @@
   color: var(--color-3);
   border-color: var(--color-3);
 }
+
+@media screen and (max-width: 768px) {
+  .link_place_footer {
+    margin-bottom: 24px;
+  }
+
+  .link_place_footer:last-of-type {
+    margin-bottom: 24px;
+  }
+}
